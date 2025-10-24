@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Meta title & description -->
+  <title>Chiniot Furniture — Handcrafted Pine & Sheesham Wood Furniture</title>
+  <meta name="description" content="Discover Chiniot furniture: timeless handcrafted pine & sheesham wood pieces, tips for buying, care guides, and why Chiniot's craftsmanship stands out." />
+
+  <!-- Robots / backend index tag -->
+  <!-- Backend may replace or control this tag. Keeping index,follow by default. -->
+  <meta name="robots" content="index, follow">
+
+  <!-- Canonical (inserted dynamically by script below). Default provided for SEO fallback. -->
+  <link rel="canonical" href="https://chiniotfurnitures.pk/">
+
+  <!-- Open Graph for social sharing -->
+  <meta property="og:title" content="Chiniot Furniture — Handcrafted Pine & Sheesham Wood Furniture">
+  <meta property="og:description" content="Discover Chiniot furniture: timeless handcrafted pine & sheesham wood pieces, tips for buying, care guides, and why Chiniot's craftsmanship stands out.">
+  <meta property="og:url" content="https://chiniotfurnitures.pk/">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🪑</text></svg>">
+
+  <style>
+    :root{
+      --bg:#0f1724; /* dark navy */
+      --card:#0b1220;
+      --muted:#94a3b8;
+      --accent:#d97706; /* warm amber */
+      --accent-2:#f59e0b;
+      --surface:#0b1220;
+      --glass: rgba(255,255,255,0.03);
+      --radius:14px;
+      --max-width:1100px;
+      --container-padding:24px;
+      --text:#e6eef8;
+    }
+
+    /* Reset */
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: linear-gradient(180deg,var(--bg),#071025 60%);
+      color:var(--text);
+      -webkit-font-smoothing:antialiased;
+      line-height:1.6;
+      padding:32px 12px;
+      display:flex;justify-content:center;
+    }
+
+    .site{
+      width:100%;
+      max-width:var(--max-width);
+      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.015));
+      border-radius:20px;
+      box-shadow: 0 10px 30px rgba(2,6,23,0.7);
+      overflow:hidden;
+      border:1px solid rgba(255,255,255,0.03);
+    }
+
+    header{
+      display:flex;align-items:center;justify-content:space-between;padding:22px var(--container-padding);
+      background: linear-gradient(90deg, rgba(217,119,6,0.06), rgba(245,158,11,0.02));
+      backdrop-filter: blur(6px);
+    }
+
+    .brand{display:flex;gap:14px;align-items:center}
+    .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center;font-weight:700;font-size:20px;color:#071025}
+    h1{font-size:18px;margin:0}
+    p.lead{margin:0;color:var(--muted);font-size:13px}
+
+    nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-weight:600}
+
+    .hero{
+      display:grid;grid-template-columns:1fr 420px;gap:28px;padding:36px var(--container-padding);
+      align-items:start;
+    }
+
+    .hero-card{
+      background:linear-gradient(180deg,var(--glass), rgba(255,255,255,0.01));
+      border-radius:var(--radius);padding:26px;
+      box-shadow: 0 6px 18px rgba(2,6,23,0.5);border:1px solid rgba(255,255,255,0.02);
+    }
+
+    .kicker{display:inline-block;background:rgba(255,255,255,0.04);padding:6px 10px;border-radius:999px;font-weight:700;color:var(--accent-2);font-size:12px}
+    h2{margin:10px 0 6px}
+
+    .hero-img{height:320px;border-radius:12px;background:linear-gradient(180deg,#3b2c1f,#7a4b2a);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700}
+
+    .features{display:flex;gap:12px;margin-top:18px}
+    .feat{flex:1;padding:12px;background:rgba(255,255,255,0.02);border-radius:10px}
+
+    main{padding:24px var(--container-padding);}
+
+    article{max-width:900px}
+    .meta{color:var(--muted);font-size:13px;margin-bottom:8px}
+
+    h3{margin-top:20px}
+    .lead-par{color:var(--muted)}
+
+    .cta{display:flex;gap:12px;margin-top:18px}
+    .btn{padding:12px 16px;border-radius:12px;background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#071025;text-decoration:none;font-weight:700}
+    .btn-outline{padding:12px 16px;border-radius:12px;border:1px solid rgba(255,255,255,0.06);color:var(--text);text-decoration:none}
+
+    .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:12px}
+
+    .card-small{background:rgba(255,255,255,0.02);padding:12px;border-radius:12px}
+
+    footer{padding:20px var(--container-padding);display:flex;justify-content:space-between;align-items:center;border-top:1px solid rgba(255,255,255,0.02)}
+
+    .thin{font-size:13px;color:var(--muted)}
+
+    /* Responsive */
+    @media (max-width:980px){
+      .hero{grid-template-columns:1fr;}
+      .hero-img{height:240px}
+      .grid-2{grid-template-columns:1fr}
+    }
+
+  </style>
+</head>
+<body>
+  <div class="site" role="document">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden>CF</div>
+        <div>
+          <h1>Chiniot Furniture</h1>
+          <p class="lead">Handcrafted wood furniture • Chiniot craftsmanship</p>
+        </div>
+      </div>
+      <nav aria-label="primary">
+        <a href="#about">About</a>
+        <a href="#collection">Collection</a>
+        <a href="#guide">Buying Guide</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-card">
+        <span class="kicker">Authentic • Made in Chiniot</span>
+        <h2>Timeless wooden furniture crafted with care</h2>
+        <p class="lead-par">Chiniot is famous for carved wooden furniture using Sheesham and pine. Our guide covers how pieces are made, how to choose the right item, and how to maintain it so your furniture lasts decades.</p>
+
+        <div class="features">
+          <div class="feat">
+            <strong>Solid Wood</strong>
+            <div class="thin">Durable sheesham & pine</div>
+          </div>
+          <div class="feat">
+            <strong>Hand Carved</strong>
+            <div class="thin">Traditional carving techniques</div>
+          </div>
+          <div class="feat">
+            <strong>Custom Options</strong>
+            <div class="thin">Size, finish & upholstery</div>
+          </div>
+        </div>
+
+        <div class="cta">
+          <a class="btn" href="#collection">See Collection</a>
+          <a class="btn-outline" href="#contact">Contact</a>
+        </div>
+
+      </div>
+
+      <aside>
+        <div class="hero-img" role="img" aria-label="Handcrafted wooden bed and chair">
+          <div style="text-align:center;padding:20px;">
+            <div style="font-size:20px;font-weight:700">Chiniot Craft</div>
+            <div style="font-size:13px;margin-top:8px;color:rgba(255,255,255,0.85)">Sheesham & pine pieces</div>
+          </div>
+        </div>
+
+        <div style="margin-top:16px;">
+          <div class="card-small">
+            <strong>Quick facts</strong>
+            <div class="thin">Origin: Chiniot, Pakistan • Popular: 50+ years • Materials: Sheesham (Indian rosewood), Pine</div>
+          </div>
+          <div style="height:12px"></div>
+          <div class="card-small">
+            <strong>Available</strong>
+            <div class="thin">Sofas, beds, wardrobes, dining sets, cabinets</div>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <main>
+      <article id="about">
+        <div class="meta">Last updated: October 2025 • By Chiniot Craft</div>
+
+        <h2>Deep dive: The story and craft of Chiniot furniture</h2>
+        <p class="lead-par">Chiniot — a small city in Punjab, Pakistan — is world-renowned for its skilled woodworkers. Using locally available hardwoods such as Sheesham (commonly called Indian rosewood) and seasoned pine, artisans create pieces that are both functional and decorative. What sets Chiniot furniture apart is the careful attention to proportion, traditional hand-carving, and finishes that highlight the wood's grain.</p>
+
+        <h3>History & tradition</h3>
+        <p>For generations, Chiniot workshops passed down carving techniques, joinery, and finishing. Many pieces are influenced by Mughal and colonial-era aesthetics — ornate motifs, inlaid accents, and balanced symmetry. Historically, this furniture served wealthy households and has since become accessible to a broader market while retaining its artisanal character.</p>
+
+        <h3>Wood types used</h3>
+        <div class="grid-2">
+          <div>
+            <h4>Sheesham (Rosewood)</h4>
+            <p>Dense, oily wood with rich grain patterns — excellent for long-lasting furniture and detailed carving. Sheesham is resistant to warping and gives a warm, deep finish.</p>
+          </div>
+          <div>
+            <h4>Pine</h4>
+            <p>Lightweight and affordable, often used for painted furniture or pieces with less ornate carving. Pine is easy to work with, and when finished well provides a clean contemporary look.</p>
+          </div>
+        </div>
+
+        <h3>How pieces are made (process)</h3>
+        <ol>
+          <li><strong>Design & measurement:</strong> Sketching, templates, and client approvals.</li>
+          <li><strong>Cutting & joinery:</strong> Mortise and tenon, dowels, and seasoned glue joints for strength.</li>
+          <li><strong>Carving:</strong> Hand tools create motifs — floral, geometric, or custom patterns.</li>
+          <li><strong>Sanding & finishing:</strong> Progressive sanding, stain/lacquer application, and oil or wax for protection.</li>
+        </ol>
+
+        <h3 id="guide">Buying guide — how to choose Chiniot furniture</h3>
+        <p>Choosing the right piece requires attention to materials, construction, finish, and ergonomics. Below is a checklist to help:</p>
+        <ul>
+          <li><strong>Inspect joinery:</strong> Solid joints (not just nails) are a sign of quality.</li>
+          <li><strong>Check the wood:</strong> Look for consistent grain and properly seasoned timber (less cracking).</li>
+          <li><strong>Ask about finishes:</strong> Natural oils (like tung or linseed) vs. polyurethane — oils are easier to repair; poly is tougher.</li>
+          <li><strong>Request measurements:</strong> Always measure your space and doorways for delivery.</li>
+          <li><strong>Warranty & support:</strong> A trustworthy maker will offer minor repairs or advice post-sale.</li>
+        </ul>
+
+        <h3>Care & maintenance</h3>
+        <p>To keep Chiniot furniture looking its best:</p>
+        <ul>
+          <li>Dust regularly with a soft cloth. Avoid abrasive cleaners.</li>
+          <li>Use coasters and placemats to protect surfaces from heat & moisture.</li>
+          <li>Keep away from direct sunlight and extreme humidity to prevent warping.</li>
+          <li>Refresh natural oil finishes annually; polish lacquer finishes when needed.</li>
+        </ul>
+
+        <h3 id="collection">Popular pieces & styles</h3>
+        <p>Chiniot makers produce a wide range: carved beds, dressing tables, ornate dining sets, carved wardrobes, and classic jharokha cabinets. Styles range from heavily carved traditional to minimal contemporary where the wood's grain is the focal point.</p>
+
+        <h3>Long-form article: The cultural and economic importance</h3>
+        <p>Chiniot furniture is more than objects — it represents a regional economy and centuries of skill. Small workshops employ families, passing down specialized knowledge that is difficult to mechanize. The export demand for authentic handcrafted furniture has also helped preserve techniques while bringing income to the region. Supporting Chiniot artisans helps sustain that cultural lineage and encourages ethical, locally-made products over mass-produced imports.</p>
+
+        <h3>FAQ</h3>
+        <h4>Is Chiniot furniture expensive?</h4>
+        <p>Quality pieces can be more expensive than mass-produced items because of the time and skill involved. However, prices vary widely depending on wood type, carving complexity, and finish.</p>
+
+        <h4>Can I order custom sizes?</h4>
+        <p>Yes — many makers accept custom orders. Always provide accurate measurements and discuss lead time, typically several weeks to months for complex pieces.</p>
+
+        <h4>Is Sheesham sustainable?</h4>
+        <p>Sustainability depends on sourcing. Ask the maker about timber origin and whether reclaimed or certified wood is available.</p>
+
+        <h3>Conclusion</h3>
+        <p>Chiniot furniture combines tradition, durability, and aesthetic warmth. Whether you're buying a statement carved bed or a simple pine side table, understanding the materials, construction, and care will help you choose pieces that last and grow more beautiful with time.</p>
+
+        <p style="margin-top:18px">For more collections and ordering information visit our partner: <a href="https://chiniotfurnitures.pk/" rel="nofollow noopener noreferrer">Chinioti Furniture</a>.</p>
+
+      </article>
+
+      <section style="margin-top:28px" id="contact">
+        <div style="display:flex;gap:20px;align-items:flex-start;flex-wrap:wrap;border-radius:12px;padding:18px;background:rgba(255,255,255,0.01);border:1px solid rgba(255,255,255,0.02)">
+          <div style="flex:1;min-width:260px">
+            <h3>Contact & Ordering</h3>
+            <p class="thin">Email: info@chiniotfurnitures.pk • Phone: +92 300 0000000</p>
+            <p class="thin">Our craftsmen accept custom orders — provide measurements and preferred finish.</p>
+          </div>
+          <div style="width:320px;min-width:220px;">
+            <form onsubmit="event.preventDefault();alert('Thanks — enquiry sent (demo).');" aria-label="Contact form">
+              <label class="thin">Name<br><input required style="width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:var(--text)"></label>
+              <div style="height:8px"></div>
+              <label class="thin">Email<br><input required type="email" style="width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:var(--text)"></label>
+              <div style="height:8px"></div>
+              <label class="thin">Message<br><textarea required style="width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:var(--text);min-height:90px"></textarea></label>
+              <div style="height:10px"></div>
+              <button class="btn" type="submit">Send Enquiry</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div class="thin">© Chiniot Furniture — Crafted with care</div>
+      <div class="thin">Designed for web • <a href="https://chiniotfurnitures.pk/" style="color:var(--accent-2);text-decoration:none;font-weight:700">Chinioti Furniture</a></div>
+    </footer>
+  </div>
+
+  <script>
+    // Dynamic canonical handling
+    // Default canonical (server can replace this string), or override by adding ?canonical=... to URL
+    (function(){
+      var defaultCanonical = 'https://chiniotfurnitures.pk/';
+      var params = new URLSearchParams(location.search);
+      var canonicalValue = params.get('canonical') || defaultCanonical || location.href;
+      var link = document.querySelector('link[rel="canonical"]');
+      if(!link){
+        link = document.createElement('link');link.setAttribute('rel','canonical');document.head.appendChild(link);
+      }
+      link.setAttribute('href', canonicalValue);
+      // Also set open graph url
+      var og = document.querySelector('meta[property="og:url"]');
+      if(og) og.setAttribute('content', canonicalValue);
+    })();
+  </script>
+
+</body>
+</html>
